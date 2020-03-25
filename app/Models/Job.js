@@ -12,12 +12,12 @@ export default class Job {
   getTemplate(index) {
     return /*html*/ `
     <div class="col-4 border border-info rounded shadow">
-      <h1>Make: ${this.title}</h1>
-      <h5>Model: ${this.company}</h5>
-      <h5>Year: ${this.minWage}</h5>
-      <h5>Price: ${this.maxWage}</h5>
+      <h1>title: ${this.title}</h1>
+      <h5>company: ${this.company}</h5>
+      <h5>minWage: ${this.minWage}</h5>
+      <h5>maxWage: ${this.maxWage}</h5>
       <img class="img-fluid" src="${this.imgUrl}" />
-      <button class="btn btn-danger btn-block" onclick="app.carController.delete(${index})">Delete</button>
+      <button class="btn btn-danger btn-block" onclick="app.jobController.delete(${index})">Delete</button>
     </div>`
   }
 

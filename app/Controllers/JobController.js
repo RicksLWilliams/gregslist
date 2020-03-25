@@ -12,7 +12,7 @@ function _drawJobs() {
 }
 
 
-export default class CarController {
+export default class JobController {
   constructor() {
     console.log("job controller works")
     _drawJobs()
@@ -20,13 +20,14 @@ export default class CarController {
 
 
   create(event) {
+    //debugger
     event.preventDefault() // prevents the page from refreshing
     let formData = event.target
     let newJobObject = {
-      make: formData.title.value,
-      model: formData.company.value,
-      year: formData.minWage.value,
-      price: formData.minWage.value,
+      title: formData.title.value,
+      company: formData.company.value,
+      minWage: formData.minWage.value,
+      maxWage: formData.maxWage.value,
       imgUrl: formData.imgUrl.value,
       description: formData.description.value
     }
