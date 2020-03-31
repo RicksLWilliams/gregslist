@@ -105,9 +105,9 @@
                             <div class="modal-body">
                                 <form class="container-fluid" onsubmit="app.jobController.create(event)">
                                     <div class="form-group">
-                                        <label for="title"></label>
-                                        <input type="text" name="title" class="form-control"
-                                            placeholder="Enter Title here..." required>
+                                        <label for="jobTitle"></label>
+                                        <input type="text" name="jobTitle" class="form-control"
+                                            placeholder="Enter Job Title here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="company"></label>
@@ -115,25 +115,21 @@
                                             placeholder="Enter company here..." required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="minWage"></label>
-                                        <input type="number" min="0" name="minWage" class="form-control"
-                                            placeholder="Enter minimum wage here..." required>
+                                        <label for="hours"></label>
+                                        <input type="number" min="0" name="hours" class="form-control"
+                                            placeholder="Enter hours here..." required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="maxWage"></label>
-                                        <input type="number" min="0" name="maxWage" class="form-control"
-                                            placeholder="Enter maximun wage here..." required>
+                                        <label for="rate"></label>
+                                        <input type="number" min="0" name="rate" class="form-control"
+                                            placeholder="Enter rate here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="description"></label>
                                         <textarea placeholder="Enter description here..." name="description" cols="30"
                                             rows="10" maxlength="250"></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="imgUrl"></label>
-                                        <input type="text" name="imgUrl" class="form-control"
-                                            placeholder="Enter Image Url here..." required>
-                                    </div>
+
                                     <button class="btn-primary btn btn-block" type="submit">Create Job</button>
                                 </form>
                             </div>
@@ -158,14 +154,14 @@
                             <div class="modal-body">
                                 <form class="container-fluid" onsubmit="app.houseController.create(event)">
                                     <div class="form-group">
-                                        <label for="city"></label>
-                                        <input type="text" name="city" class="form-control"
-                                            placeholder="Enter city here..." required>
+                                        <label for="bedrooms"></label>
+                                        <input type="text" name="bedrooms" class="form-control"
+                                            placeholder="Enter bedrooms here..." required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="state"></label>
-                                        <input type="text" name="state" class="form-control"
-                                            placeholder="Enter state here..." required>
+                                        <label for="bathrooms"></label>
+                                        <input type="text" name="bathrooms" class="form-control"
+                                            placeholder="Enter bathrooms here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="year"></label>
@@ -173,9 +169,14 @@
                                             placeholder="Enter year here..." required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="size"></label>
-                                        <input type="number" min="0" name="size" class="form-control"
-                                            placeholder="Enter size here..." required>
+                                        <label for="price"></label>
+                                        <input type="number" min="0" name="price" class="form-control"
+                                            placeholder="Enter price here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="levels"></label>
+                                        <input type="number" min="0" name="levels" class="form-control"
+                                            placeholder="Enter levels here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="description"></label>
@@ -223,6 +224,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
